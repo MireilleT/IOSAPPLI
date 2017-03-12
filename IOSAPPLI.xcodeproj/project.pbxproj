@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7AE247901E7580CA00B794D9 /* FilterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AE2478F1E7580CA00B794D9 /* FilterController.swift */; };
+		7AE247921E7588C200B794D9 /* FormatController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AE247911E7588C200B794D9 /* FormatController.swift */; };
 		B743A5561E057E9F00A0A233 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B743A5551E057E9F00A0A233 /* AppDelegate.swift */; };
 		B743A55B1E057E9F00A0A233 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B743A5591E057E9F00A0A233 /* Main.storyboard */; };
 		B743A55D1E057E9F00A0A233 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B743A55C1E057E9F00A0A233 /* Assets.xcassets */; };
@@ -24,6 +26,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7AE2478F1E7580CA00B794D9 /* FilterController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterController.swift; sourceTree = "<group>"; };
+		7AE247911E7588C200B794D9 /* FormatController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormatController.swift; sourceTree = "<group>"; };
 		B743A5521E057E9F00A0A233 /* IOSAPPLI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IOSAPPLI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B743A5551E057E9F00A0A233 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B743A55A1E057E9F00A0A233 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -55,6 +59,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7AE2478A1E757BCD00B794D9 /* Purchase */ = {
+			isa = PBXGroup;
+			children = (
+				7AE2478F1E7580CA00B794D9 /* FilterController.swift */,
+				7AE247911E7588C200B794D9 /* FormatController.swift */,
+			);
+			name = Purchase;
+			sourceTree = "<group>";
+		};
 		B743A5491E057E9E00A0A233 = {
 			isa = PBXGroup;
 			children = (
@@ -74,6 +87,7 @@
 		B743A5541E057E9F00A0A233 /* IOSAPPLI */ = {
 			isa = PBXGroup;
 			children = (
+				7AE2478A1E757BCD00B794D9 /* Purchase */,
 				B7EB2DE21E0895CC000F20AE /* JSON */,
 				B743A56D1E073F6200A0A233 /* Informations et réglages du compte */,
 				B743A56A1E070D7000A0A233 /* Home */,
@@ -206,11 +220,13 @@
 				B7A8CE801E74FB87008F74DB /* MenuViewController.swift in Sources */,
 				B7A8CE701E74D7D8008F74DB /* ConnexionViewController.swift in Sources */,
 				B7A8CE7A1E74DDBC008F74DB /* ReglageViewController.swift in Sources */,
+				7AE247921E7588C200B794D9 /* FormatController.swift in Sources */,
 				B743A5561E057E9F00A0A233 /* AppDelegate.swift in Sources */,
 				B7A8CE821E74FC0B008F74DB /* HistoriqueViewController.swift in Sources */,
 				B7A8CE7E1E74E48E008F74DB /* SWRevealViewController.m in Sources */,
 				B743A5691E05884700A0A233 /* CreationCompteViewController.swift in Sources */,
 				B7A8CE781E74DD14008F74DB /* CarnetViewController.swift in Sources */,
+				7AE247901E7580CA00B794D9 /* FilterController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

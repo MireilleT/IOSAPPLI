@@ -552,7 +552,7 @@ static CGFloat scaledValue( CGFloat v1, CGFloat min2, CGFloat max2, CGFloat min1
     UITouch *touch = [touches anyObject];
     CGPoint nowPoint = [touch locationInView:self.view];
     
-    if (abs(nowPoint.x - _beginPoint.x) > kDirectionPanThreshold) _dragging = YES;
+    if (fabs(nowPoint.x - _beginPoint.x) > kDirectionPanThreshold) _dragging = YES;
     else if (abs(nowPoint.y - _beginPoint.y) > kDirectionPanThreshold) self.state = UIGestureRecognizerStateFailed;
 }
 
@@ -1290,7 +1290,7 @@ const int FrontViewPositionNone = 0xff;
             }
         }
         
-        duration = fabsf(journey/velocity);
+        duration = fabs(journey/velocity);
     }
     
     // Position driven change:

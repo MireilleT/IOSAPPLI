@@ -20,9 +20,11 @@ class AccueilViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
         
-    let vue = self.storyboard?.instantiateViewController(withIdentifier: "IdAccueil") as! ConnexionViewController
-    self.navigationController?.pushViewController(vue, animated: true);
-
+    }
+    
+    
+    @IBAction func suivantAccueil(_ sender: Any) {
+           performSegue(withIdentifier: "segue.accueil", sender: self)
     }
 
 }

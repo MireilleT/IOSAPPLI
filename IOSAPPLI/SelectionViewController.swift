@@ -10,7 +10,9 @@ import UIKit
 
 class SelectionViewController: UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate {
 
-    @IBOutlet weak var imageVue: UIImageView!
+    @IBOutlet var imageView: UIImageView!
+    
+    let imagePicker = UIImagePickerController()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -49,34 +51,23 @@ class SelectionViewController: UIViewController, UINavigationControllerDelegate,
             imagePicker.allowsEditing = true
             self.present(imagePicker, animated: true, completion: nil)
         }
-        
-        //let image = UIImagePickerController ()
-        //image.delegate = self
-        
-        //image.sourceType = UIImagePickerControllerSourceType.photoLibrary
-        //image.allowsEditing = false
-        
-        //self.present(image, animated: true)
-        //{
-            //Après complet
-        //}
-    //}
-    
-    //func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any])
-    //{
-        //if let image = info[UIImagePickerControllerOriginalImage] as? UIImage
-        //{
-            //imageVue.image = image
-        //}
-            
-        //else
-        //{
-            //Message d'erreur
-        //}
-        
-        //self.dismiss(animated: true, completion: nil)
-        
-    //}
-    
     }
+    
+    @IBAction func validateImage(_ sender: UIButton) {
+        performSegue(withIdentifier: "segue.filter", sender: self);
+    }
+    
+    private func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject]) {
+        if let pickedImage = info[UIImagePickerControllerOriginalImage] as? UIImage {
+            imageView.contentMode = .scaleAspectFit
+            imageView.image = pickedImage
+        }
+        
+        dismiss(animated: true, completion: nil)
+    }
+    
+    func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
+        dismiss(animated: true, completion: nil)
+    }
+    
 }
