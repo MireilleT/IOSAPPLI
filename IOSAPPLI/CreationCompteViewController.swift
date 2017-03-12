@@ -8,21 +8,21 @@
 
 import UIKit
 
-class InscriptionViewController: UIViewController {
+class CreationCompteViewController: UIViewController {
 
+    
     @IBOutlet weak var nomChamp: UITextField!
     
     @IBOutlet weak var prenomChamp: UITextField!
     
-    @IBOutlet weak var datenaiChamp: UITextField!
+    @IBOutlet weak var dateChamp: UITextField!
     
-    @IBOutlet weak var emailChamp: UITextField!
+    @IBOutlet weak var mailChamp: UITextField!
     
-    @IBOutlet weak var pseudoChamp: UITextField!
+    @IBOutlet weak var pwdChamp: UITextField!
     
-    @IBOutlet weak var mdpChamp: UITextField!
-    
-    @IBOutlet weak var repmdpChamp: UITextField!
+    @IBOutlet weak var pwdRepChamp: UITextField!
+  
     
     
     override func viewDidLoad() {
@@ -40,21 +40,22 @@ class InscriptionViewController: UIViewController {
     //{let alert = UIAlertController(title:title, message: message, preferredStyle: <#T##UIAlertControllerStyle#>)
         //alert.addAction(UIAlertAction(title: "OK", style:UIAlertControllerStyle.alert)
     
-    @IBAction func enregBoutton(_ sender: AnyObject) {
+    
+    
+    @IBAction func validerBoutton2(_ sender: Any) {
         //var nom:NSString = nomChamp.text
         //var utilisateur:Struct_Utilisateur()
         //utilisateur.nom = nomChamp.text
         let nom = nomChamp.text!
         let prenom = prenomChamp.text!
-        let datenai = datenaiChamp.text!
-        let email = emailChamp.text!
-        let pseudo = pseudoChamp.text!
-        let mdp = mdpChamp.text!
-        let repmdp = repmdpChamp.text!
+        let date = dateChamp.text!
+        let email = mailChamp.text!
+        let pwd = pwdChamp.text!
+        let pwdRep = pwdRepChamp.text!
         
         
         //Vérifier si les hamps sont vides
-        if (nom.isEmpty || prenom.isEmpty || datenai.isEmpty || email.isEmpty || pseudo.isEmpty || mdp.isEmpty || (repmdp.isEmpty))
+        if (nom.isEmpty || prenom.isEmpty || date.isEmpty || email.isEmpty || pwd.isEmpty || (pwdRep.isEmpty))
             
         {
             //Afficher les messages d'alerte
@@ -69,7 +70,7 @@ class InscriptionViewController: UIViewController {
 
         
         //Vérifier la correspondance des mots de passe
-        if ( (nom != "" || prenom != "" || datenai != "" || email != "" || pseudo != "" || mdp != "" || repmdp != "") && (mdp != repmdp))
+        if ( (nom != "" || prenom != "" || date != "" || email != "" || pwd != "" || pwdRep != "") && (pwd != pwdRep))
     
         {
             //Afficher un message d'alerte
@@ -85,14 +86,14 @@ class InscriptionViewController: UIViewController {
         
         
         
-        if (nom != "" || prenom != "" || datenai != "" || email != "" || pseudo != "" || mdp != "" || repmdp != "" )
+        if (nom != "" || prenom != "" || date != "" || email != "" || pwd != "" || pwdRep != "" )
             {
                 performSegue(withIdentifier: "segue.selec", sender: self)
             }
     }
     
     
-    @IBAction func connecBoutton(_ sender: AnyObject) {
+    @IBAction func connexionBoutton(_ sender: Any) {
     performSegue(withIdentifier: "segue.reconnec", sender: self)
     }
 }

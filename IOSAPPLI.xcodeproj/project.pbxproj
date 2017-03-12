@@ -8,26 +8,40 @@
 
 /* Begin PBXBuildFile section */
 		B743A5561E057E9F00A0A233 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B743A5551E057E9F00A0A233 /* AppDelegate.swift */; };
-		B743A5581E057E9F00A0A233 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B743A5571E057E9F00A0A233 /* ViewController.swift */; };
 		B743A55B1E057E9F00A0A233 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B743A5591E057E9F00A0A233 /* Main.storyboard */; };
 		B743A55D1E057E9F00A0A233 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B743A55C1E057E9F00A0A233 /* Assets.xcassets */; };
 		B743A5601E057E9F00A0A233 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B743A55E1E057E9F00A0A233 /* LaunchScreen.storyboard */; };
-		B743A5691E05884700A0A233 /* InscriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B743A5681E05884700A0A233 /* InscriptionViewController.swift */; };
+		B743A5691E05884700A0A233 /* CreationCompteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B743A5681E05884700A0A233 /* CreationCompteViewController.swift */; };
 		B743A56C1E070EE300A0A233 /* SelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B743A56B1E070EE300A0A233 /* SelectionViewController.swift */; };
 		B743A56F1E07558500A0A233 /* AccueilViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B743A56E1E07558500A0A233 /* AccueilViewController.swift */; };
+		B7A8CE701E74D7D8008F74DB /* ConnexionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A8CE6F1E74D7D8008F74DB /* ConnexionViewController.swift */; };
+		B7A8CE761E74DD00008F74DB /* PanierViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A8CE751E74DD00008F74DB /* PanierViewController.swift */; };
+		B7A8CE781E74DD14008F74DB /* CarnetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A8CE771E74DD14008F74DB /* CarnetViewController.swift */; };
+		B7A8CE7A1E74DDBC008F74DB /* ReglageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A8CE791E74DDBC008F74DB /* ReglageViewController.swift */; };
+		B7A8CE7E1E74E48E008F74DB /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B7A8CE7D1E74E48E008F74DB /* SWRevealViewController.m */; };
+		B7A8CE801E74FB87008F74DB /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A8CE7F1E74FB87008F74DB /* MenuViewController.swift */; };
+		B7A8CE821E74FC0B008F74DB /* HistoriqueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A8CE811E74FC0B008F74DB /* HistoriqueViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B743A5521E057E9F00A0A233 /* IOSAPPLI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IOSAPPLI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B743A5551E057E9F00A0A233 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B743A5571E057E9F00A0A233 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B743A55A1E057E9F00A0A233 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B743A55C1E057E9F00A0A233 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B743A55F1E057E9F00A0A233 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B743A5611E057E9F00A0A233 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B743A5681E05884700A0A233 /* InscriptionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InscriptionViewController.swift; sourceTree = "<group>"; };
+		B743A5681E05884700A0A233 /* CreationCompteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreationCompteViewController.swift; sourceTree = "<group>"; };
 		B743A56B1E070EE300A0A233 /* SelectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectionViewController.swift; sourceTree = "<group>"; };
 		B743A56E1E07558500A0A233 /* AccueilViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccueilViewController.swift; sourceTree = "<group>"; };
+		B7A8CE6F1E74D7D8008F74DB /* ConnexionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnexionViewController.swift; sourceTree = "<group>"; };
+		B7A8CE751E74DD00008F74DB /* PanierViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PanierViewController.swift; sourceTree = "<group>"; };
+		B7A8CE771E74DD14008F74DB /* CarnetViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarnetViewController.swift; sourceTree = "<group>"; };
+		B7A8CE791E74DDBC008F74DB /* ReglageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReglageViewController.swift; sourceTree = "<group>"; };
+		B7A8CE7B1E74E48D008F74DB /* IOSAPPLI-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "IOSAPPLI-Bridging-Header.h"; sourceTree = "<group>"; };
+		B7A8CE7C1E74E48E008F74DB /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		B7A8CE7D1E74E48E008F74DB /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		B7A8CE7F1E74FB87008F74DB /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		B7A8CE811E74FC0B008F74DB /* HistoriqueViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoriqueViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,11 +75,10 @@
 			isa = PBXGroup;
 			children = (
 				B7EB2DE21E0895CC000F20AE /* JSON */,
-				B743A56D1E073F6200A0A233 /* Informations du compte */,
-				B743A56A1E070D7000A0A233 /* Selection photo */,
-				B743A5671E05878700A0A233 /* Connexion Et enregistrement */,
+				B743A56D1E073F6200A0A233 /* Informations et réglages du compte */,
+				B743A56A1E070D7000A0A233 /* Home */,
+				B743A5671E05878700A0A233 /* Page Accueil Connexion et Création compte */,
 				B743A5551E057E9F00A0A233 /* AppDelegate.swift */,
-				B743A5571E057E9F00A0A233 /* ViewController.swift */,
 				B743A5591E057E9F00A0A233 /* Main.storyboard */,
 				B743A55C1E057E9F00A0A233 /* Assets.xcassets */,
 				B743A55E1E057E9F00A0A233 /* LaunchScreen.storyboard */,
@@ -74,28 +87,37 @@
 			path = IOSAPPLI;
 			sourceTree = "<group>";
 		};
-		B743A5671E05878700A0A233 /* Connexion Et enregistrement */ = {
+		B743A5671E05878700A0A233 /* Page Accueil Connexion et Création compte */ = {
 			isa = PBXGroup;
 			children = (
-				B743A5681E05884700A0A233 /* InscriptionViewController.swift */,
+				B743A5681E05884700A0A233 /* CreationCompteViewController.swift */,
 				B743A56E1E07558500A0A233 /* AccueilViewController.swift */,
+				B7A8CE6F1E74D7D8008F74DB /* ConnexionViewController.swift */,
 			);
-			name = "Connexion Et enregistrement";
+			name = "Page Accueil Connexion et Création compte";
 			sourceTree = "<group>";
 		};
-		B743A56A1E070D7000A0A233 /* Selection photo */ = {
+		B743A56A1E070D7000A0A233 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				B7A8CE7C1E74E48E008F74DB /* SWRevealViewController.h */,
+				B7A8CE7D1E74E48E008F74DB /* SWRevealViewController.m */,
 				B743A56B1E070EE300A0A233 /* SelectionViewController.swift */,
+				B7A8CE7B1E74E48D008F74DB /* IOSAPPLI-Bridging-Header.h */,
+				B7A8CE7F1E74FB87008F74DB /* MenuViewController.swift */,
 			);
-			name = "Selection photo";
+			name = Home;
 			sourceTree = "<group>";
 		};
-		B743A56D1E073F6200A0A233 /* Informations du compte */ = {
+		B743A56D1E073F6200A0A233 /* Informations et réglages du compte */ = {
 			isa = PBXGroup;
 			children = (
+				B7A8CE751E74DD00008F74DB /* PanierViewController.swift */,
+				B7A8CE771E74DD14008F74DB /* CarnetViewController.swift */,
+				B7A8CE791E74DDBC008F74DB /* ReglageViewController.swift */,
+				B7A8CE811E74FC0B008F74DB /* HistoriqueViewController.swift */,
 			);
-			name = "Informations du compte";
+			name = "Informations et réglages du compte";
 			sourceTree = "<group>";
 		};
 		B7EB2DE21E0895CC000F20AE /* JSON */ = {
@@ -137,6 +159,7 @@
 				TargetAttributes = {
 					B743A5511E057E9E00A0A233 = {
 						CreatedOnToolsVersion = 8.2;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -178,10 +201,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				B743A56F1E07558500A0A233 /* AccueilViewController.swift in Sources */,
-				B743A5581E057E9F00A0A233 /* ViewController.swift in Sources */,
 				B743A56C1E070EE300A0A233 /* SelectionViewController.swift in Sources */,
+				B7A8CE761E74DD00008F74DB /* PanierViewController.swift in Sources */,
+				B7A8CE801E74FB87008F74DB /* MenuViewController.swift in Sources */,
+				B7A8CE701E74D7D8008F74DB /* ConnexionViewController.swift in Sources */,
+				B7A8CE7A1E74DDBC008F74DB /* ReglageViewController.swift in Sources */,
 				B743A5561E057E9F00A0A233 /* AppDelegate.swift in Sources */,
-				B743A5691E05884700A0A233 /* InscriptionViewController.swift in Sources */,
+				B7A8CE821E74FC0B008F74DB /* HistoriqueViewController.swift in Sources */,
+				B7A8CE7E1E74E48E008F74DB /* SWRevealViewController.m in Sources */,
+				B743A5691E05884700A0A233 /* CreationCompteViewController.swift in Sources */,
+				B7A8CE781E74DD14008F74DB /* CarnetViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,10 +331,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = IOSAPPLI/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.estiam.IOSAPPLI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "IOSAPPLI/IOSAPPLI-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -314,10 +346,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = IOSAPPLI/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.estiam.IOSAPPLI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "IOSAPPLI/IOSAPPLI-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;

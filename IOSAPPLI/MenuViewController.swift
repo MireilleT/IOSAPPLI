@@ -6,4 +6,23 @@
 //  Copyright © 2017 Mireille TOULOUBET. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+class MenuViewController: UIViewController {
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        // Do any additional setup after loading the view.
+    }
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+        
+        //let vue = self.storyboard?.instantiateViewController(withIdentifier: "IdAccueil") as! ViewController
+        // self.navigationController?.pushViewController(vue, animated: true);
+        
+    }
+    
+}

@@ -10,17 +10,17 @@ import UIKit
 
 class ViewController: UIViewController, UITextFieldDelegate {
     
-
-    @IBOutlet var pseudoChamp: UITextField!
-    @IBOutlet var mdpChamp: UITextField!
+    @IBOutlet weak var loginChamp: UITextField!
+    
+    @IBOutlet weak var pwdChamp: UITextField!
     
     
-    @IBAction func connexBoutton(_ sender: AnyObject) {
-        let pseudo = pseudoChamp.text
-        let mdp = mdpChamp.text
+    @IBAction func validerBoutton(_ sender: Any) {
+        let login = loginChamp.text
+        let pwd = pwdChamp.text
         
         //Si les champs sont vides
-        if (pseudo!.isEmpty || mdp!.isEmpty ) {
+        if (login!.isEmpty || pwd!.isEmpty ) {
         //Création de l'alerte
         let alert = UIAlertController(title: "Alerte", message:
         "Tous les champs doivent être renseignés", preferredStyle: UIAlertControllerStyle.alert)
@@ -34,7 +34,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
         }
         
         
-        if (pseudo != "" || mdp != "")
+        if (login != "" || pwd != "")
         {
         performSegue(withIdentifier: "segue.selec", sender: self)
         }
@@ -59,13 +59,10 @@ class ViewController: UIViewController, UITextFieldDelegate {
         }
     })
 task.resume()
-    
-    
-    
 }
     
     
-    @IBAction func enregiBoutton(_ sender: AnyObject) {
+    @IBAction func creerBoutton(_ sender: Any) {
         performSegue(withIdentifier: "segue.enreg", sender: self)
     }
     

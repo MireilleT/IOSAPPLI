@@ -19,11 +19,10 @@ class AccueilViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
-    }
-    
-    @IBAction func suivantBoutton(_ sender: AnyObject)
-    {
-        performSegue(withIdentifier: "segue.connec", sender: self)
+        
+    let vue = self.storyboard?.instantiateViewController(withIdentifier: "IdAccueil") as! ConnexionViewController
+    self.navigationController?.pushViewController(vue, animated: true);
+
     }
 
 }
