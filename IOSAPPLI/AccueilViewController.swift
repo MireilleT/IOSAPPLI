@@ -24,7 +24,8 @@ class AccueilViewController: UIViewController {
     
     
     @IBAction func suivantAccueil(_ sender: Any) {
-           performSegue(withIdentifier: "segue.accueil", sender: self)
+        let vue = self.storyboard?.instantiateViewController(withIdentifier: "ConnexionViewController") as! ConnexionViewController
+        self.navigationController?.pushViewController(vue, animated: true);
     }
 
 }

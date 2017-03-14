@@ -30,14 +30,16 @@ class ConnexionViewController: UIViewController, UITextFieldDelegate {
         }
         if (login != "" || pwd != "")
         {
-            performSegue(withIdentifier: "segue.selec", sender: self)
+            let vue = self.storyboard?.instantiateViewController(withIdentifier: "SelectionViewController") as! SelectionViewController
+            self.navigationController?.pushViewController(vue, animated: true);
         }
     }
     
     
     @IBAction func enregBoutton(_ sender: AnyObject) {
         //enregChamp()
-        performSegue(withIdentifier: "segue.enreg", sender: self)
+        let vue = self.storyboard?.instantiateViewController(withIdentifier: "CreationCompteViewController") as! CreationCompteViewController
+        self.navigationController?.pushViewController(vue, animated: true);
     }
     
     //func enregChamp () {

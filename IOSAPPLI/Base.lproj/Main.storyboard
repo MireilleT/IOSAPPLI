@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1217" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="bia-93-rs5">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1217" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="9uP-nk-Nqn">
     <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -10,10 +10,26 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Accueil View Controller-->
+        <!--Navigation Controller-->
+        <scene sceneID="S6L-IS-Tn6">
+            <objects>
+                <navigationController id="9uP-nk-Nqn" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="bZc-hI-dbi">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="bia-93-rs5" kind="relationship" relationship="rootViewController" id="kze-qw-YpY"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ggw-mo-O9D" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2034" y="-150"/>
+        </scene>
+        <!--AccueilViewController-->
         <scene sceneID="Xrg-jn-x1N">
             <objects>
-                <viewController id="bia-93-rs5" customClass="AccueilViewController" customModule="IOSAPPLI" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AccueilViewController" title="AccueilViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="bia-93-rs5" customClass="AccueilViewController" customModule="IOSAPPLI" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="oPE-0I-MM3"/>
                         <viewControllerLayoutGuide type="bottom" id="tap-uF-pp4"/>
@@ -50,21 +66,21 @@
                                 <state key="normal" title="Suivant"/>
                                 <connections>
                                     <action selector="suivantAccueil:" destination="bia-93-rs5" eventType="touchUpInside" id="3iE-Ws-WF5"/>
-                                    <segue destination="BYZ-38-t0r" kind="presentation" identifier="segue.accueil" id="Mvr-1V-VgY"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="kUu-VS-JeW"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AeI-Aj-Ptf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1209" y="-88"/>
+            <point key="canvasLocation" x="-1241" y="-150"/>
         </scene>
-        <!--Connexion View Controller-->
+        <!--ConnexionViewController-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ConnexionViewController" customModule="IOSAPPLI" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ConnexionViewController" title="ConnexionViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="ConnexionViewController" customModule="IOSAPPLI" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -108,7 +124,6 @@
                                 <state key="normal" title="Valider"/>
                                 <connections>
                                     <action selector="validerBoutton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uSQ-K9-chf"/>
-                                    <segue destination="3XB-2x-Obl" kind="presentation" identifier="segue.selec" id="QtF-v8-WJt"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dUU-af-r5i">
@@ -147,17 +162,16 @@
                     <connections>
                         <outlet property="loginChamp" destination="9or-bf-5pv" id="hhf-2V-Km6"/>
                         <outlet property="pwdChamp" destination="1Dp-vC-j0t" id="7vc-Kr-slE"/>
-                        <segue destination="wSO-4l-xJH" kind="presentation" identifier="segue.enreg" id="ua7-tX-A9e"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-384" y="-135"/>
+            <point key="canvasLocation" x="-523" y="-150"/>
         </scene>
-        <!--Creation Compte View Controller-->
+        <!--CreationCompteViewController-->
         <scene sceneID="A2a-jI-nDp">
             <objects>
-                <viewController id="wSO-4l-xJH" customClass="CreationCompteViewController" customModule="IOSAPPLI" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CreationCompteViewController" title="CreationCompteViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="wSO-4l-xJH" customClass="CreationCompteViewController" customModule="IOSAPPLI" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="1hy-wA-fSG"/>
                         <viewControllerLayoutGuide type="bottom" id="twi-8Q-Jhb"/>
@@ -255,7 +269,6 @@
                                 <state key="normal" title="Se connecter"/>
                                 <connections>
                                     <action selector="connexionBoutton:" destination="wSO-4l-xJH" eventType="touchUpInside" id="Vgn-Uw-rCM"/>
-                                    <segue destination="BYZ-38-t0r" kind="presentation" identifier="segue.connec" id="V5u-0t-U7D"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wHO-bY-MeJ">
@@ -338,12 +351,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="woC-nz-jFN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1209" y="659"/>
+            <point key="canvasLocation" x="-523" y="509"/>
         </scene>
-        <!--Historique View Controller-->
+        <!--HistoriqueViewController-->
         <scene sceneID="T1s-wD-8OQ">
             <objects>
-                <viewController id="8Be-cd-zqd" customClass="HistoriqueViewController" customModule="IOSAPPLI" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HistoriqueViewController" title="HistoriqueViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="8Be-cd-zqd" customClass="HistoriqueViewController" customModule="IOSAPPLI" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="1rr-33-Hp9"/>
                         <viewControllerLayoutGuide type="bottom" id="EOi-fT-p6G"/>
@@ -389,10 +402,10 @@
             </objects>
             <point key="canvasLocation" x="960" y="1285"/>
         </scene>
-        <!--Selection View Controller-->
+        <!--SelectionViewController-->
         <scene sceneID="FYW-R2-Axm">
             <objects>
-                <viewController storyboardIdentifier="segue.Selec" id="3XB-2x-Obl" customClass="SelectionViewController" customModule="IOSAPPLI" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SelectionViewController" title="SelectionViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="3XB-2x-Obl" customClass="SelectionViewController" customModule="IOSAPPLI" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="q4U-lZ-RvO"/>
                         <viewControllerLayoutGuide type="bottom" id="BYE-j3-qUW"/>
@@ -428,8 +441,8 @@
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Menu"/>
                                 <connections>
+                                    <action selector="menuOptionButton:" destination="3XB-2x-Obl" eventType="touchDown" id="xeu-vV-8Ex"/>
                                     <action selector="panierBoutton:" destination="3XB-2x-Obl" eventType="touchUpInside" id="JXl-9u-BG5"/>
-                                    <segue destination="vwb-mY-FE2" kind="custom" customClass="SWRevealViewControllerSegueSetController" id="mR9-zX-g9P"/>
                                 </connections>
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Llz-v4-ZCm">
@@ -456,7 +469,6 @@
                                 <state key="normal" title="Valider"/>
                                 <connections>
                                     <action selector="validateImage:" destination="3XB-2x-Obl" eventType="touchDown" id="IU6-fz-GBF"/>
-                                    <segue destination="jgP-EU-q6O" kind="presentation" identifier="segue.filter" id="pzc-3r-LrD"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -468,12 +480,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="c6w-Ho-Ioa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="390" y="-523"/>
+            <point key="canvasLocation" x="324" y="-457"/>
         </scene>
-        <!--Menu View Controller-->
+        <!--MenuViewController-->
         <scene sceneID="hPT-Jr-WYC">
             <objects>
-                <viewController id="vwb-mY-FE2" customClass="MenuViewController" customModule="IOSAPPLI" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MenuViewController" title="MenuViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="vwb-mY-FE2" customClass="MenuViewController" customModule="IOSAPPLI" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Cyy-XG-rLh"/>
                         <viewControllerLayoutGuide type="bottom" id="wVE-fm-q00"/>
@@ -494,7 +506,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Réglages"/>
                                 <connections>
-                                    <segue destination="O6D-U9-UXe" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="smD-7i-3Rq"/>
+                                    <action selector="reglageButton:" destination="vwb-mY-FE2" eventType="touchDown" id="h8T-hk-MoS"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="16q-RD-Kff">
@@ -502,7 +514,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Historique"/>
                                 <connections>
-                                    <segue destination="8Be-cd-zqd" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="c8E-RE-bMO"/>
+                                    <action selector="historiqueButton:" destination="vwb-mY-FE2" eventType="touchDown" id="icp-1e-LBq"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p3T-fE-5cJ">
@@ -510,7 +522,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Carnet d'adresse"/>
                                 <connections>
-                                    <segue destination="gIi-ch-can" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="0ZO-WS-5QF"/>
+                                    <action selector="repertoireButton:" destination="vwb-mY-FE2" eventType="touchDown" id="qv3-e8-2bw"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6i5-D9-w7g">
@@ -524,12 +536,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MQY-DM-9Ts" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="390" y="389"/>
+            <point key="canvasLocation" x="323" y="222"/>
         </scene>
-        <!--Reglage View Controller-->
+        <!--ReglageViewController-->
         <scene sceneID="VMc-69-ooE">
             <objects>
-                <viewController id="O6D-U9-UXe" customClass="ReglageViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ReglageViewController" title="ReglageViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="O6D-U9-UXe" customClass="ReglageViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="FHo-b6-0Yv"/>
                         <viewControllerLayoutGuide type="bottom" id="ts2-Ad-vrh"/>
@@ -637,10 +649,10 @@
             </objects>
             <point key="canvasLocation" x="-398" y="1285"/>
         </scene>
-        <!--Carnet View Controller-->
+        <!--CarnetViewController-->
         <scene sceneID="m53-2p-gtv">
             <objects>
-                <viewController id="gIi-ch-can" customClass="CarnetViewController" customModule="IOSAPPLI" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CarnetViewController" title="CarnetViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="gIi-ch-can" customClass="CarnetViewController" customModule="IOSAPPLI" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="lg0-5s-gKJ"/>
                         <viewControllerLayoutGuide type="bottom" id="CKz-Ap-PHC"/>
@@ -698,7 +710,6 @@
                                 <state key="normal" title="Validate"/>
                                 <connections>
                                     <action selector="validateFilter:" destination="jgP-EU-q6O" eventType="touchDown" id="je7-OH-Tck"/>
-                                    <segue destination="VG2-PU-faR" kind="presentation" identifier="segue.format" id="osN-f2-LVt"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YDU-0M-dFU">
@@ -719,7 +730,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="S0C-cR-1Ce" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1164" y="-525"/>
+            <point key="canvasLocation" x="1153" y="-457"/>
         </scene>
         <!--FormatController-->
         <scene sceneID="lXK-2u-sOP">
@@ -765,10 +776,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sLe-BJ-TE9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2003" y="-525"/>
+            <point key="canvasLocation" x="2003" y="-457"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="Mvr-1V-VgY"/>
-    </inferredMetricsTieBreakers>
 </document>

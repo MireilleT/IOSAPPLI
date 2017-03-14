@@ -10,6 +10,21 @@ import UIKit
 
 class MenuViewController: UIViewController {
     
+    @IBAction func reglageButton(_ sender: UIButton) {
+        let vue = self.storyboard?.instantiateViewController(withIdentifier: "ReglageViewController") as! ReglageViewController
+        self.navigationController?.pushViewController(vue, animated: true);
+    }
+    
+    @IBAction func historiqueButton(_ sender: UIButton) {
+        let vue = self.storyboard?.instantiateViewController(withIdentifier: "HistoriqueViewController") as! HistoriqueViewController
+        self.navigationController?.pushViewController(vue, animated: true);
+    }
+    
+    @IBAction func repertoireButton(_ sender: UIButton) {
+        let vue = self.storyboard?.instantiateViewController(withIdentifier: "CarnetViewController") as! CarnetViewController
+        self.navigationController?.pushViewController(vue, animated: true);
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         

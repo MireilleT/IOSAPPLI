@@ -54,7 +54,7 @@ class CreationCompteViewController: UIViewController {
         let pwdRep = pwdRepChamp.text!
         
         
-        //Vérifier si les hamps sont vides
+        //Vérifier si les champs sont vides
         if (nom.isEmpty || prenom.isEmpty || date.isEmpty || email.isEmpty || pwd.isEmpty || (pwdRep.isEmpty))
             
         {
@@ -88,12 +88,13 @@ class CreationCompteViewController: UIViewController {
         
         if (nom != "" || prenom != "" || date != "" || email != "" || pwd != "" || pwdRep != "" )
             {
-                performSegue(withIdentifier: "segue.selec", sender: self)
-            }
+                let vue = self.storyboard?.instantiateViewController(withIdentifier: "ConnexionViewController") as! ConnexionViewController
+                self.navigationController?.pushViewController(vue, animated: true);            }
     }
     
     
     @IBAction func connexionBoutton(_ sender: Any) {
-    performSegue(withIdentifier: "segue.reconnec", sender: self)
+        let vue = self.storyboard?.instantiateViewController(withIdentifier: "SelectionViewController") as! SelectionViewController
+        self.navigationController?.pushViewController(vue, animated: true);
     }
 }

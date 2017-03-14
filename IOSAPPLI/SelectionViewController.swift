@@ -54,7 +54,13 @@ class SelectionViewController: UIViewController, UINavigationControllerDelegate,
     }
     
     @IBAction func validateImage(_ sender: UIButton) {
-        performSegue(withIdentifier: "segue.filter", sender: self);
+        let vue = self.storyboard?.instantiateViewController(withIdentifier: "FilterController") as! FilterController
+        self.navigationController?.pushViewController(vue, animated: true);
+    }
+    
+    @IBAction func menuOptionButton(_ sender: UIButton) {
+        let vue = self.storyboard?.instantiateViewController(withIdentifier: "MenuViewController") as! MenuViewController
+        self.navigationController?.pushViewController(vue, animated: true);
     }
     
     private func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject]) {

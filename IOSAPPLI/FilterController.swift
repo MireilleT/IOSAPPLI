@@ -17,7 +17,8 @@ class FilterController : UIViewController {
     @IBOutlet var ImageView: UIImageView!
     
     @IBAction func validateFilter(_ sender: UIButton) {
-        performSegue(withIdentifier: "segue.format", sender: self);
+        let vue = self.storyboard?.instantiateViewController(withIdentifier: "FormatController") as! FormatController
+        self.navigationController?.pushViewController(vue, animated: true);
     }
     
     
