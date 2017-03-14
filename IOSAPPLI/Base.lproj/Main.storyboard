@@ -129,6 +129,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dUU-af-r5i">
                                 <rect key="frame" x="103" y="441" width="123" height="30"/>
                                 <state key="normal" title="Créer un compte"/>
+                                <connections>
+                                    <action selector="enregButton:" destination="BYZ-38-t0r" eventType="touchDown" id="af6-li-4Po"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Connexion" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RY8-XQ-NeG">
                                 <rect key="frame" x="108" y="56" width="105" height="26.5"/>
@@ -374,7 +377,7 @@
                                 <rect key="frame" x="0.0" y="43" width="320" height="152"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Y1Q-xk-5Ef" id="lUl-Xq-iUf">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="152"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="151"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="commande du..........................................................................................................." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="dpJ-Tr-6qk">
@@ -442,7 +445,6 @@
                                 <state key="normal" title="Menu"/>
                                 <connections>
                                     <action selector="menuOptionButton:" destination="3XB-2x-Obl" eventType="touchDown" id="xeu-vV-8Ex"/>
-                                    <action selector="panierBoutton:" destination="3XB-2x-Obl" eventType="touchUpInside" id="JXl-9u-BG5"/>
                                 </connections>
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Llz-v4-ZCm">

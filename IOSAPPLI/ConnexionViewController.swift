@@ -36,7 +36,7 @@ class ConnexionViewController: UIViewController, UITextFieldDelegate {
     }
     
     
-    @IBAction func enregBoutton(_ sender: AnyObject) {
+    @IBAction func enregButton(_ sender: UIButton) {
         //enregChamp()
         let vue = self.storyboard?.instantiateViewController(withIdentifier: "CreationCompteViewController") as! CreationCompteViewController
         self.navigationController?.pushViewController(vue, animated: true);
