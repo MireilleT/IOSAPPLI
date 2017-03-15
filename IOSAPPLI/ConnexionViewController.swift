@@ -41,9 +41,6 @@ class ConnexionViewController: UIViewController, UITextFieldDelegate {
         let vue = self.storyboard?.instantiateViewController(withIdentifier: "CreationCompteViewController") as! CreationCompteViewController
         self.navigationController?.pushViewController(vue, animated: true);
         
-        let postString = ["login":loginchamp,"password":pwdChamp],
-        
-        requestpost.httpBody = postString.data(using: String.Encoding.utf8)
     }
     
     
@@ -51,8 +48,24 @@ class ConnexionViewController: UIViewController, UITextFieldDelegate {
     override func viewDidLoad()
     {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
         
+        //Test sans appe focntion APIController
+        let session = URLSession.shared
+        var u = URLRequest(url: URL(string : "https://.......")!)// à renseigner
+        u.httpMethod = "POST"
+        u.httpBody = "value=valeur".data(using: .utf8)
+        let t = session.dataTask(with: u) {
+            (data, response, error) in
+            let s = String(data : data!, encoding : .utf8)
+            let r = String(data : data!, encoding : .utf8)
+            DispatchQueue.main.async {
+                self.loginChamp.text = s!
+                self.pwdChamp.text = r!
+            }
+            print(s!)
+            print(r!)
+        }
+        t.resume()
     }
     
     override func didReceiveMemoryWarning()
@@ -61,3 +74,5 @@ class ConnexionViewController: UIViewController, UITextFieldDelegate {
         // Dispose of any resources that can be recreated.
     }
 }
+
+
