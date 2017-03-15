@@ -40,17 +40,12 @@ class ConnexionViewController: UIViewController, UITextFieldDelegate {
         //enregChamp()
         let vue = self.storyboard?.instantiateViewController(withIdentifier: "CreationCompteViewController") as! CreationCompteViewController
         self.navigationController?.pushViewController(vue, animated: true);
+        
+        let postString = ["login":loginchamp,"password":pwdChamp],
+        
+        requestpost.httpBody = postString.data(using: String.Encoding.utf8)
     }
     
-    //func enregChamp () {
-    //emailChamp.text = ""
-    //mdpChamp.text = ""
-    
-    //func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-    //emailChamp.resignFirstResponder()
-    //mdpChamp.resignFirstResponder()
-    //return true
-    //}
     
     
     override func viewDidLoad()
