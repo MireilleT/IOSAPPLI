@@ -18,7 +18,7 @@ import Foundation
 
 class API {
     
-    static let baseUrl = "......"// à renseigner Romain
+    static let baseUrl = "https://romain.bossard.estiam.com/API"
     
 }
 

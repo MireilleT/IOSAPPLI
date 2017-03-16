@@ -51,7 +51,7 @@ class ConnexionViewController: UIViewController, UITextFieldDelegate {
         
         //Test sans appe focntion APIController
         let session = URLSession.shared
-        var u = URLRequest(url: URL(string : "https://.......")!)// à renseigner
+        var u = URLRequest(url: URL(string : "https://romain.bossard.estiam.com/API/users")!)// à renseigner
         u.httpMethod = "POST"
         u.httpBody = "value=valeur".data(using: .utf8)
         let t = session.dataTask(with: u) {
